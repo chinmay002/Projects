@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class='jumbotron bg-secondary'>
+<h1>Hired or Not , Wanna predict your placement Status</h1>
+</div>
+    <div class='container'>
+<form action='/predict' method='post'>
+    <div class='row'>
+        <div class='col-sm-4'>
+        <div class ='card bg-primary'>
+        <div class="card-body">
+            <h5 class='card-title'>Gender</h5>
+            <select name='gn' required='required'>
+                <option value='Male'>M</option>
+                <option value='FeMale'>F</option>
+            </select>
+        </div>
+        </div>
+        </div>
+
+        <div class='col-sm-4'>
+        <div class ='card bg-primary'>
+        <div class="card-body">
+            <h5 class='card-title'>SSLC Percentage</h5>
+        <input  type='number' name='sslcp' step='any' min=0 max=100 required='required'>
+        </div>
+        </div>
+        </div>
+
+
+
+        <div class='col-sm-4'>
+        <div class ='card bg-primary'>
+        <div class="card-body">
+            <h5 class='card-title'>PUC Percentage</h5>
+            <input  type='number' name='pup' step='any' min=0 max=100 required='required'>
+        </div>
+        </div>
+        </div>
+        </div>
+<br>
+        <div class='row'>
+        <div class='col-sm-4'>
+        <div class ='card bg-primary'>
+        <div class="card-body">
+        <h5 class='card-title'>Degree Percentage</h5>
+        <input  type='number' name='degp' step='any' min=0 max=100 required='required'>
+        </div>
+        </div>
+        </div>
+
+           <div class='col-sm-4'>
+        <div class ='card bg-primary'>
+        <div class="card-body">
+        <h5 class='card-title'>ETEST Percentage</h5>
+        <input  type='number' name='etest' step='any' min=0 max=100 required='required'>
+        </div>
+        </div>
+        </div>
+
+        <div class='col-sm-4'>
+        <div class ='card bg-primary'>
+        <div class="card-body">
+            <h5 class='card-title'>MBA Percentage</h5>
+        <input  type='number' name='mbap' step='any' min=0 max=100 required='required'>
+        </div>
+        </div>
+        </div>
+    </div>
+    <br>
+
+    <div class='row'>
+        <div class='col-sm-4'>
+        <div class ='card bg-primary'>
+        <div class="card-body">
+            <h5 class='card-title'>PU STREAM</h5>
+        <select name='pu_s'>
+            <option value ='Commerce'>Commerce</option>
+            <option value ='Science'>Science</option>
+            <option value ='Arts'>Arts</option>
+        </select>
+        </div>
+        </div>
+        </div>
+
+        <div class='col-sm-4'>
+        <div class ='card bg-primary'>
+        <div class="card-body">
+            <h5 class='card-title'>Degree Stream</h5>
+        <select name='deg_s'>
+            <option value ='Sci&Tech'>Sci&Tech</option>
+            <option value ='Comm&Mgmt'>Comm&Mgmt</option>
+            <option value ='Others'>Others</option>
+        </select>
+        </div>
+        </div>
+        </div>
+
+        <div class='col-sm-4'>
+        <div class ='card bg-primary'>
+        <div class="card-body">
+            <h5 class='card-title'>Work EXP</h5>
+        <select name='w_exp'>
+            <option value ='Yes'>Yes</option>
+            <option value ='No'>No</option>
+        </select>
+        </div>
+        </div>
+        </div>
+    </div>
+        <br>
+        <div class='row'>
+        <div class='col-sm-4'>
+        <div class ='card bg-primary'>
+        <div class="card-body">
+            <h5 class='card-title'>Specialisation</h5>
+        <select name='mba_s'>
+            <option value ='Mkt&HR'>Mkt&HR</option>
+            <option value ='Mkt&Fin'>Mkt&Fin</option>
+        </select>
+        </div>
+        </div>
+        </div>
+    </div>
+
+<br>
+    <input type='submit' value='Submit'>
+</form>
+
+<br>
+{{ text }}
+</body>
+</html>>
